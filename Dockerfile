@@ -6,7 +6,7 @@ RUN apk update && \
     apk add --update build-base py-pip && \
     rm -rf /var/cache/apk/*
 
-RUN pip install boto3
+RUN pip install boto3 pyyaml
 
 RUN adduser -S worker
 USER worker
